@@ -3,9 +3,3 @@
     grid-template-columns: repeat($columns, $width-card);
   }
 }
-
-@mixin mediaBelowGrid ($brakepoint, $columns) {
-  @media (min-width: $brakepoint) {
-    grid-template-columns: repeat($columns, $width-card);
-  }
-}
