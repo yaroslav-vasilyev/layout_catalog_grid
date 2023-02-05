@@ -1,13 +1,11 @@
 @mixin mediaStartGrid ($brakepoint, $columns) {
   @media (max-width: $brakepoint) {
     grid-template-columns: repeat($columns, $width-card);
-    grid-template-rows: repeat(auto-fill, $heigh-card);
   }
 }
 
 @mixin mediaBelowGrid ($brakepoint, $columns) {
   @media (min-width: $brakepoint) {
     grid-template-columns: repeat($columns, $width-card);
-    grid-template-rows: repeat(auto-fill, $heigh-card);
   }
 }

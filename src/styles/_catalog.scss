@@ -2,22 +2,18 @@
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(4, $width-card);
-  grid-template-rows: repeat(auto-fill, $heigh-card);
   gap: 48px;
 
   @include mediaStartGrid (1024px, 3);
   @include mediaStartGrid (768px, 2);
   @include mediaStartGrid (488px, 1);
 
-
   &__card {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: $width-card;
     height: $heigh-card;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 48px;
   }
 }
